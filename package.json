@@ -1,7 +1,6 @@
 {
   "name": "google-bard724",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-724/google-bard724.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alex-724/google-bard724/issues"
+  },
+  "homepage": "https://github.com/Alex-724/google-bard724#readme",
+  "description": ""
 }
