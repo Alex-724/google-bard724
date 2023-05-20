@@ -42,12 +42,13 @@ The `ask` method sends a GET request to the Bard API with the specified question
 
 ##  How to get cookies?
 
-* nstall the Cookie-Editor extension.
+* install the Cookie-Editor extension.
 * Go to https://bard.google.com and login.
 * Click on the extension icon and find a cookie starting with __Secure-{account_number}PSID (e.g. __Secure-1PSID).
 * Ensure that you are copying the correct cookie corresponding to your account number, which can be found in the URL as bard.google.com/u/{account_number}.
 * If your account number is /u/3 for example, search for the cookie beginning with __Secure-3PSID.
 * Copy the cookie and store it in a variable called bardcookie.
+
 
 ```javascript
 const bardcookie = '<your-bard-cookie>'; // replace <your-bard-cookie> with your account number
