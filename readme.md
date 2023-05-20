@@ -40,6 +40,45 @@ Replace `'your-bard-cookie'` with your actual Bard API cookie. If no cookie is p
 
 The `ask` method sends a GET request to the Bard API with the specified question and bardcookie. It returns a Promise that resolves to the response data from the API.
 
+## Usage by saving the chats
+
+To use the API wrapper with saving the chats, import it into your JavaScript file:
+
+```javascript
+const Api = require('google-bard724');
+
+// Create an instance of the API wrapper
+const bardcookie = 'your-bard-cookie';
+const api = new Api(bardcookie, {
+    saveChats: true,
+    saveChatsPath: './chats.json',
+    saveChatsLimit: 6,
+});
+
+// Make an API request
+async function askQuestion(question, chatId) {
+    try {
+        const response = await api.ask(question, chatId);
+        console.log(response);
+    } catch (error) {
+        console.error(error);
+    }
+}
+askQuestion('My name is Alex?');
+askQuestion('What is my name?');
+```
+
+Replace `'your-bard-cookie'` with your actual Bard API cookie. If no cookie is provided or if it is invalid, an error will be thrown.
+
+Replace `'./chats.json'` with your actual path to the file where you want to save the chats.
+
+Replace `6` with the desired maximum number of chats you want to save per chatId.
+
+The `ask` method sends a GET request to the Bard API with the specified question and bardcookie. It returns a Promise that resolves to the response data from the API.
+
+
+
+
 ##  How to get cookies?
 
 * install the Cookie-Editor extension.
