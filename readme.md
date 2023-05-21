@@ -64,8 +64,13 @@ async function askQuestion(question, chatId) {
         console.error(error);
     }
 }
-askQuestion('My name is Alex?');
-askQuestion('What is my name?');
+
+async function test() {
+    await askQuestion('My name is Alex?', 'USER#0000');
+    await askQuestion('What is my name?', 'USER#0000');
+}
+
+test();
 ```
 
 Replace `'your-bard-cookie'` with your actual Bard API cookie. If no cookie is provided or if it is invalid, an error will be thrown.
@@ -76,8 +81,7 @@ Replace `6` with the desired maximum number of chats you want to save per chatId
 
 The `ask` method sends a GET request to the Bard API with the specified question and bardcookie. It returns a Promise that resolves to the response data from the API.
 
-
-
+(**Note: You have to create the file where you want to save the chats before running the code and make sure that the file code is `{}`.**)
 
 ##  How to get cookies?
 
