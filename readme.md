@@ -81,7 +81,7 @@ Replace `6` with the desired maximum number of chats you want to save per chatId
 
 The `ask` method sends a GET request to the Bard API with the specified question and bardcookie. It returns a Promise that resolves to the response data from the API.
 
-(**Note: You have to create the file where you want to save the chats before running the code and make sure that the file code is `{}`.**)
+**Note: You have to create the file where you want to save the chats before running the code and make sure that the file code is `{}`.**
 
 ##  How to get cookies?
 

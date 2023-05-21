@@ -1,7 +1,7 @@
 {
   "name": "google-bard724",
   "description": "Google Bard724 is an npm package that provides an Axios API wrapper for making HTTP requests to the Bard API. It simplifies the process of interacting with the API by encapsulating the necessary logic in a reusable class.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
